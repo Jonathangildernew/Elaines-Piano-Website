@@ -1,0 +1,357 @@
+.wrap {
+  text-align: center;
+  vertical-align: middle;
+  background: white;
+}
+
+.spinner {
+  width: 95px;
+  height: 95px;
+  background: deepskyblue;
+  border-radius: 50%;
+  position: relative;
+  margin: 50px;
+  display: inline-block;
+}
+.spinner:after, .spinner:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.spinner-1:after {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  border: 4px solid transparent;
+  border-top-color: orangered;
+  border-bottom-color: orangered;
+  -webkit-animation: spinny 1s linear infinite;
+          animation: spinny 1s linear infinite;
+}
+
+@-webkit-keyframes spinny {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+  }
+  50% {
+    -webkit-transform: rotate(45deg) scale(1.2);
+            transform: rotate(45deg) scale(1.2);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes spinny {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+  }
+  50% {
+    -webkit-transform: rotate(45deg) scale(1.2);
+            transform: rotate(45deg) scale(1.2);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
+  }
+}
+
+
+#load_screen{
+	background: white;
+	opacity: 1;
+	position: fixed;
+    z-index:10;
+	top: 0px;
+	width: 100%;
+	height: 1600px;
+}
+#loading{
+	color:#FFF;
+	width:120px;
+	height:24px;
+	margin: 300px auto;
+}
+
+
+.brand{
+font-family: 'verdana', cursive;
+font-size:35px;
+color: deepskyblue
+}
+
+.active, li{
+font-size:15px;
+
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height:65px;
+    height: 65px;
+    padding-top: 0;
+    font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+}
+
+.jumbotron {
+    position: relative;
+    background: #000 url("img/keys.jpg") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+    font-family: 'Oregano', cursive;
+}
+
+#calltoday{
+  color:white;
+  font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+}
+ button{
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+ }
+
+.page-header{
+text-align: center;
+border-bottom: none;
+}
+
+.page-header-about-me{
+color:white;
+text-align: center;
+position: relative;
+}
+
+#aboutcontainer{
+  position: relative;
+  top:100px;
+	background-color: deepskyblue;
+	padding-top: 50px;
+	height: 530px;
+}
+
+
+.aboutmetext{
+  padding-top: 40px;
+	color: white;
+  line-height: 22px;
+  margin-bottom: 100px;
+  width: 1000px;
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+}
+
+
+
+#pit1container{
+  background-color:orangered;
+  position: relative;
+
+}
+
+#pit1para{
+  position: relative;
+  word-wrap: break-word;
+  width: 400px;
+  color:white;
+  top: 50px;
+  left: 200px;
+}
+
+h2{
+  color: white ;
+  top: 30px;
+  position: relative;
+  left:200px;
+}
+
+#pit1{
+top:100px;
+position: relative;
+background: orangered url("img/organ.png") top right;
+background-repeat:no-repeat;
+height:530px;
+width: 1000px;
+margin: 0 auto;
+right:100px;
+
+}
+
+#servicescontainer{
+  padding-top: 100px;
+	height: 530px;
+  background-color: lightgray;
+  bottom: 140px;
+  position: relative;
+}
+
+#services-heading{
+  position: relative;
+  z-index: 1;
+  color: white;
+  bottom: 20px;
+}
+
+.servicestext{
+  position: relative;
+  width: 1000px;
+  line-height: 22px;
+  margin-bottom: 100px;
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+  top: 30px;
+  color: white;
+}
+
+#pit2container2{
+background-color:white;
+bottom: 100px;
+position: relative;
+}
+
+#pit2{
+
+  position: relative;
+  background:white url("img/diploma.png") left;
+  background-repeat:no-repeat;
+  height:420px;
+  width: 1000px;
+  margin: 0 auto;
+  left: 100px;
+}
+
+#getcerth2heading{
+width: 200px;
+color: dodgerblue ;
+position: relative;
+left:450px;
+top: 120px;
+}
+
+#pit2para{
+  position: relative;
+  word-wrap: break-word;
+  width: 400px;
+  color:white;
+  top: 150px;
+  left: 400px;
+  color: dodgerblue;
+}
+
+.page-header-find-me{
+  bottom: 150px;
+  text-align: center;
+  position: relative;
+  color:white;
+}
+
+#mapcontainer{
+  position: relative;
+  background-color: orangered;
+  padding-top: 150px;
+  margin-bottom: 0px;
+	height: 560px
+}
+
+.map{
+ position: relative;
+ width: 500px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 30px;
+ padding-bottom: 100px;
+ bottom: 100px;
+
+}
+
+.page-header{
+color: deepskyblue;
+}
+
+#myModalLabel{
+color: deepskyblue;
+font-size: 30px;
+}
+
+a {
+text-decoration: none;
+color: #888;
+font-family: georgia, Geneva, Arial, Helvetica, Sans-Serif;
+
+}
+
+
+
+a:link    {color:deepskyblue; background-color:transparent; text-decoration:none}
+a:visited {color:deepskyblue; background-color:transparent; text-decoration:none}
+a:hover   {color:dodgerblue; background-color:transparent; text-decoration:none}
+a:active  {color:deepskyblue; background-color:transparent; text-decoration:none}
+
+
+
+#submit1{
+ height:25px;
+ margin-left:5px;
+}
+
+  textarea {
+    margin-right: 10px;
+    height: 100px;
+    width: 500px;
+    border: 2px solid deepskyblue;
+  }
+
+
+label{
+    display: block;
+    margin-bottom: 20px;
+
+}
+
+span {
+    padding-top: 10px;
+    color: dodgerblue;
+    font-size: 19px;
+    display: block;
+    font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;;
+    padding-bottom: 5px;
+}
+
+
+
+.footer-home{
+  position: relative;
+  width: 100%;
+  bottom:0;
+  height: 200px;
+  background-color:dodgerblue;
+  }
+
+  #footer-text {
+  margin:0;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  text-align: center;
+  }
+
+  #facebook{
+   padding-top: 20px;
+   padding-right: 10px;
+   position: relative;
+   float: right;
+   width:60px;
+   height:70px;
+
+  }
+  #copyright{
+    position: relative;
+    top:130px;
+    text-align: center;
+  }
